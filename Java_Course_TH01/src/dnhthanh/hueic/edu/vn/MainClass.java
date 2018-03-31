@@ -19,6 +19,7 @@ public class MainClass {
 		
 		//Nhập vào mảng theo định dạng các phần tử cách nhau bằng kt trắng 1 2 3
 		String input = br.readLine();
+		//Tách các phần tử bằng cách chia nhỏ xâu theo dấu hiệu là kt trắng
 		String[] input_element = input.split(" ");//chứa các phần tử ở dạng xâu kt
 		float mang[] = new float[input_element.length];
 		for(int i=0; i<mang.length; i++)
