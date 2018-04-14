@@ -18,7 +18,7 @@ public class HangHoa {
 		return ngaysanxuat;
 	}
 
-	public void setngaySanXuat(String nsx) {
+	public void setNgaySanXuat(String nsx) {
 		ngaysanxuat = nsx;
 	}
 

@@ -23,7 +23,7 @@ public class KhachHang {
 	public void MuaHang(String th , String nsx , double dg , int sl) {
 		HangHoa hh = new HangHoa();
 		hh.setTenHang(th);
-		hh.setngaySanXuat(nsx);
+		hh.setNgaySanXuat(nsx);
 		hh.setDonGia(dg);
 		hh.setSoLuong(sl);
 		hh.TinhTien();
