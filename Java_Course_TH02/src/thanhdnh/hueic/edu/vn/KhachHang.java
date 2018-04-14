@@ -20,8 +20,12 @@ public class KhachHang {
 		password = pa;
 	}
 	
-	public void MuaHang() {
-		HangHoa hangHoa = new HangHoa();
-		
+	public void MuaHang(String th , String nsx , double dg , int sl) {
+		HangHoa hh = new HangHoa();
+		hh.setTenHang(th);
+		hh.setngaySanXuat(nsx);
+		hh.setDonGia(dg);
+		hh.setSoLuong(sl);
+		hh.TinhTien();
 	}
 }

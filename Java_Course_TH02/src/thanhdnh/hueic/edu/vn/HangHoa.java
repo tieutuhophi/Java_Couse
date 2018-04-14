@@ -18,7 +18,7 @@ public class HangHoa {
 		return ngaysanxuat;
 	}
 
-	public void setngaysanxuat(String nsx) {
+	public void setngaySanXuat(String nsx) {
 		ngaysanxuat = nsx;
 	}
 
@@ -26,7 +26,7 @@ public class HangHoa {
 		return dongia;
 	}
 
-	public void setdongia(double dg) {
+	public void setDonGia(double dg) {
 		dongia = dg;
 	}
 
@@ -34,7 +34,7 @@ public class HangHoa {
 		return soluong;
 	}
 
-	public void setsoluong(int sl) {
+	public void setSoLuong(int sl) {
 		soluong = sl;
 	}
 
@@ -42,8 +42,11 @@ public class HangHoa {
 		return dongia * soluong;
 	}
 
+	public String HangHoa() {
+		return "Tên hàng : "+tenhang+", ngày sản xuất : "+ngaysanxuat+", đơn giá : "+dongia+", số lượng : "+soluong;
+	}
 	public HangHoa() {
-
+		
 	}
 
 	public HangHoa(String th, String nsx, double dg, int sl) {
