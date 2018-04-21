@@ -27,5 +27,6 @@ public class KhachHang {
 		hh.setDonGia(dg);
 		hh.setSoLuong(sl);
 		hh.TinhTien();
+
 	}
 }

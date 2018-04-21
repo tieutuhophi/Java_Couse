@@ -2,19 +2,22 @@ package thanhdnh.hueic.edu.vn;
 
 public class HangHoa {
 	private String tenhang;
+	//Tiếp tục cho các thuộc tính còn lại
+
 	private String ngaysanxuat;
 	private double dongia;
 	private int soluong;
 
-	public String gettenhang() {
+	public String getTenHang() {
 		return tenhang;
 	}
 
 	public void setTenHang(String th) {
 		tenhang = th;
 	}
+	//Tiếp tục cho các phương thức còn lại
 
-	public String getngaysanxuat() {
+	public String getNgaySanXuat() {
 		return ngaysanxuat;
 	}
 
@@ -22,7 +25,7 @@ public class HangHoa {
 		ngaysanxuat = nsx;
 	}
 
-	public double getdongia() {
+	public double getDonGia() {
 		return dongia;
 	}
 
@@ -30,7 +33,7 @@ public class HangHoa {
 		dongia = dg;
 	}
 
-	public int getsoluong() {
+	public int getSoLuong() {
 		return soluong;
 	}
 
@@ -38,15 +41,8 @@ public class HangHoa {
 		soluong = sl;
 	}
 
-	public double TinhTien() {
+	public double TinhTien(){
 		return dongia * soluong;
-	}
-
-	public String HangHoa() {
-		return "Tên hàng : "+tenhang+", ngày sản xuất : "+ngaysanxuat+", đơn giá : "+dongia+", số lượng : "+soluong;
-	}
-	public HangHoa() {
-		
 	}
 
 	public HangHoa(String th, String nsx, double dg, int sl) {
@@ -56,4 +52,11 @@ public class HangHoa {
 		soluong = sl;
 	}
 
+	public HangHoa() {
+	}
+
+	@Override
+	public String toString() {
+		return "Tên hàng: " + tenhang + "\n" + "Ngày sản xuất: " + ngaysanxuat + "\n" +
+				"Đơn giá: " + dongia + "\n" + "Số lượng: " + soluong + "\n" + "Thành tiền: " + TinhTien(); }
 }
